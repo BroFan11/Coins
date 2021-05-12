@@ -11,6 +11,7 @@ import org.bukkit.entity.Player;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
+import java.util.List;
 import java.util.UUID;
 
 public class GetCoinCommand extends Command {
@@ -40,6 +41,15 @@ public class GetCoinCommand extends Command {
             long coin = CoinsAPI.getCoin(uuid);
             MessageUtils.sendMessage(sender, MessageConfig.GET_COIN_MESSAGE.getValue().replace("{coin}", Long.toString(coin)));
             return true;
+        }
+    }
+
+    @Override
+    public @NotNull List<String> tabComplete(@NotNull CommandSender sender, @NotNull String alias, @NotNull String[] args) throws IllegalArgumentException {
+        if (args.length == 1) {
+            return super.tabComplete(sender, alias, args);
+        } else {
+            return Collections.emptyList();
         }
     }
 }

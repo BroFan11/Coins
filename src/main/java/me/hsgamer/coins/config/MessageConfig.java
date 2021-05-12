@@ -9,6 +9,8 @@ public class MessageConfig extends PathableConfig {
     public static final StringConfigPath PREFIX = new StringConfigPath("prefix", "&f[&eCoins&f] ");
     public static final StringConfigPath PLAYER_ONLY = new StringConfigPath("player-only", "&cThis is for player only");
     public static final StringConfigPath GET_COIN_MESSAGE = new StringConfigPath("get-coin-message", "&aCoin: &f{coin}");
+    public static final StringConfigPath SUCCESS = new StringConfigPath("success", "&aSuccess");
+    public static final StringConfigPath NUMBER_ONLY = new StringConfigPath("number-only", "&aNumber only");
 
     public MessageConfig(Plugin plugin) {
         super(new BukkitConfig(plugin, "messages.yml"));
