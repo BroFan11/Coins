@@ -21,7 +21,7 @@ public class CacheManager {
         cacheUserMap.clear();
     }
 
-    public CacheUser getUser(UUID uuid) {
-        return cacheUserMap.get(uuid);
+    public Optional<CacheUser> getUser(UUID uuid) {
+        return Optional.ofNullable(cacheUserMap.get(uuid));
     }
 }

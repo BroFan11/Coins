@@ -1,6 +1,7 @@
 package me.hsgamer.coins;
 
 import me.hsgamer.coins.api.CoinsAPI;
+import me.hsgamer.coins.command.GetCoinCommand;
 import me.hsgamer.coins.config.MainConfig;
 import me.hsgamer.coins.config.MessageConfig;
 import me.hsgamer.coins.listener.PlayerListener;
@@ -9,6 +10,7 @@ import me.hsgamer.coins.manager.data.DataManager;
 import me.hsgamer.coins.manager.data.MySqlDataManager;
 import me.hsgamer.coins.manager.data.SqliteDataManager;
 import me.hsgamer.hscore.bukkit.baseplugin.BasePlugin;
+import me.hsgamer.hscore.bukkit.utils.MessageUtils;
 
 public final class Coins extends BasePlugin {
     private final MainConfig mainConfig = new MainConfig(this);
@@ -23,6 +25,7 @@ public final class Coins extends BasePlugin {
 
     @Override
     public void load() {
+        MessageUtils.setPrefix(MessageConfig.PREFIX::getValue);
         mainConfig.setup();
         messageConfig.setup();
     }
@@ -32,6 +35,8 @@ public final class Coins extends BasePlugin {
         loadStorage();
 
         registerListener(new PlayerListener(this));
+
+        registerCommand(new GetCoinCommand());
     }
 
     @Override

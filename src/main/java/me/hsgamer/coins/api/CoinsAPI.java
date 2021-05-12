@@ -1,6 +1,7 @@
 package me.hsgamer.coins.api;
 
 import me.hsgamer.coins.Coins;
+import me.hsgamer.coins.manager.cache.CacheUser;
 
 import java.util.UUID;
 
@@ -20,7 +21,7 @@ public class CoinsAPI {
     }
 
     public static long getCoin(UUID uuid) {
-        return instance.getCacheManager().getUser(uuid).getValue();
+        return instance.getCacheManager().getUser(uuid).map(CacheUser::getValue).orElseGet(() -> instance.getDataManager().getCoin(uuid));
     }
 
     public static void addCoin(UUID uuid, long coin) {
