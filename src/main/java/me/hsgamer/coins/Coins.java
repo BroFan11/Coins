@@ -3,6 +3,8 @@ package me.hsgamer.coins;
 import me.hsgamer.coins.api.CoinsAPI;
 import me.hsgamer.coins.command.AddCoinCommand;
 import me.hsgamer.coins.command.GetCoinCommand;
+import me.hsgamer.coins.command.SetCoinCommand;
+import me.hsgamer.coins.command.TakeCoinCommand;
 import me.hsgamer.coins.config.MainConfig;
 import me.hsgamer.coins.config.MessageConfig;
 import me.hsgamer.coins.listener.PlayerListener;
@@ -39,6 +41,8 @@ public final class Coins extends BasePlugin {
 
         registerCommand(new GetCoinCommand());
         registerCommand(new AddCoinCommand());
+        registerCommand(new SetCoinCommand());
+        registerCommand(new TakeCoinCommand());
     }
 
     @Override
