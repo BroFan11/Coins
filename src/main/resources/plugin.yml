@@ -1,0 +1,5 @@
+name: Coins
+version: ${project.version}
+main: me.hsgamer.coins.Coins
+api-version: 1.16
+authors: [ HSGamer ]
