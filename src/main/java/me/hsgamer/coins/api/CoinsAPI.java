@@ -27,8 +27,8 @@ public class CoinsAPI {
         instance.getDataManager().addCoin(uuid, coin);
     }
 
-    public static boolean removeCoin(UUID uuid, long coin) {
-        return instance.getDataManager().removeCoin(uuid, coin);
+    public static boolean takeCoin(UUID uuid, long coin) {
+        return instance.getDataManager().takeCoin(uuid, coin);
     }
 
     public static void setCoin(UUID uuid, long coin) {

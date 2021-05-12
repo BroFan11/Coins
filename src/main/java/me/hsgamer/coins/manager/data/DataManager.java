@@ -16,7 +16,7 @@ public interface DataManager {
         setCoin(uuid, current + coin);
     }
 
-    default boolean removeCoin(UUID uuid, long coin) {
+    default boolean takeCoin(UUID uuid, long coin) {
         long current = getCoin(uuid);
         if (current < coin) {
             return false;
