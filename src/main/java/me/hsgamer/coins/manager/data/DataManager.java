@@ -21,7 +21,7 @@ public interface DataManager {
         if (current < coin) {
             return false;
         }
-        setCoin(uuid, current + coin);
+        setCoin(uuid, current - coin);
         return true;
     }
 }
