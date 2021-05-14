@@ -33,7 +33,7 @@ public abstract class SqlDataManager implements DataManager {
         }
     }
 
-    private PreparedStatementContainer prepareStatement(String query, Object... args) {
+    private PreparedStatementContainer prepareStatement(@Language("SQL") String query, Object... args) {
         PreparedStatementContainer container;
         try {
             container = PreparedStatementContainer.of(connection, query, args);
