@@ -1,6 +1,6 @@
-package me.hsgamer.coins.manager.data;
+package me.brofan11.erme.manager.data;
 
-import me.hsgamer.coins.config.MainConfig;
+import me.brofan11.erme.config.MainConfig;
 import me.hsgamer.hscore.database.Setting;
 import me.hsgamer.hscore.database.client.sql.SqlClient;
 import me.hsgamer.hscore.database.client.sql.java.JavaSqlClient;

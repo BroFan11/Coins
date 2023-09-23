@@ -1,22 +1,22 @@
-package me.hsgamer.coins.api;
+package me.brofan11.erme.api;
 
-import me.hsgamer.coins.Coins;
-import me.hsgamer.coins.manager.cache.CacheUser;
+import me.brofan11.erme.Erme;
+import me.brofan11.erme.manager.cache.CacheUser;
 
 import java.util.UUID;
 
 public class CoinsAPI {
-    private static Coins instance;
+    private static Erme instance;
 
     private CoinsAPI() {
         // EMPTY
     }
 
-    public static Coins getInstance() {
+    public static Erme getInstance() {
         return instance;
     }
 
-    public static void setInstance(Coins instance) {
+    public static void setInstance(Erme instance) {
         CoinsAPI.instance = instance;
     }
 

@@ -1,21 +1,21 @@
-package me.hsgamer.coins;
+package me.brofan11.erme;
 
-import me.hsgamer.coins.api.CoinsAPI;
-import me.hsgamer.coins.command.AddCoinCommand;
-import me.hsgamer.coins.command.GetCoinCommand;
-import me.hsgamer.coins.command.SetCoinCommand;
-import me.hsgamer.coins.command.TakeCoinCommand;
-import me.hsgamer.coins.config.MainConfig;
-import me.hsgamer.coins.config.MessageConfig;
-import me.hsgamer.coins.listener.PlayerListener;
-import me.hsgamer.coins.manager.cache.CacheManager;
-import me.hsgamer.coins.manager.data.DataManager;
-import me.hsgamer.coins.manager.data.MySqlDataManager;
-import me.hsgamer.coins.manager.data.SqliteDataManager;
+import me.brofan11.erme.listener.PlayerListener;
+import me.brofan11.erme.manager.cache.CacheManager;
+import me.brofan11.erme.manager.data.SqliteDataManager;
+import me.brofan11.erme.api.CoinsAPI;
+import me.brofan11.erme.command.AddCoinCommand;
+import me.brofan11.erme.command.GetCoinCommand;
+import me.brofan11.erme.command.SetCoinCommand;
+import me.brofan11.erme.command.TakeCoinCommand;
+import me.brofan11.erme.config.MainConfig;
+import me.brofan11.erme.config.MessageConfig;
+import me.brofan11.erme.manager.data.DataManager;
+import me.brofan11.erme.manager.data.MySqlDataManager;
 import me.hsgamer.hscore.bukkit.baseplugin.BasePlugin;
 import me.hsgamer.hscore.bukkit.utils.MessageUtils;
 
-public final class Coins extends BasePlugin {
+public final class Erme extends BasePlugin {
     private final MainConfig mainConfig = new MainConfig(this);
     private final MessageConfig messageConfig = new MessageConfig(this);
     private final CacheManager cacheManager = new CacheManager();

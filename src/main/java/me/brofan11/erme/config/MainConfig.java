@@ -1,4 +1,4 @@
-package me.hsgamer.coins.config;
+package me.brofan11.erme.config;
 
 import me.hsgamer.hscore.bukkit.config.BukkitConfig;
 import me.hsgamer.hscore.config.PathableConfig;

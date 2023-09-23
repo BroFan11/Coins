@@ -1,4 +1,4 @@
-package me.hsgamer.coins.manager.cache;
+package me.brofan11.erme.manager.cache;
 
 import java.util.Map;
 import java.util.Optional;

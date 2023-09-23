@@ -1,15 +1,15 @@
-package me.hsgamer.coins.listener;
+package me.brofan11.erme.listener;
 
-import me.hsgamer.coins.Coins;
+import me.brofan11.erme.Erme;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 
 public class PlayerListener implements Listener {
-    private final Coins instance;
+    private final Erme instance;
 
-    public PlayerListener(Coins instance) {
+    public PlayerListener(Erme instance) {
         this.instance = instance;
     }
 

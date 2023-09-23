@@ -1,11 +1,11 @@
-package me.hsgamer.coins.manager.cache;
+package me.brofan11.erme.manager.cache;
 
-import me.hsgamer.coins.config.MainConfig;
+import me.brofan11.erme.config.MainConfig;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.UUID;
 
-import static me.hsgamer.coins.api.CoinsAPI.getInstance;
+import static me.brofan11.erme.api.CoinsAPI.getInstance;
 
 public class CacheUser extends BukkitRunnable {
     private final UUID uuid;

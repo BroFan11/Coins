@@ -1,5 +1,5 @@
-name: Coins
+name: erme
 version: ${project.version}
-main: me.hsgamer.coins.Coins
+main: me.BroFan11.erme.Erme
 api-version: 1.16
-authors: [ HSGamer ]
+authors: [ BroFan11 ]

@@ -1,8 +1,8 @@
-package me.hsgamer.coins.command;
+package me.brofan11.erme.command;
 
-import me.hsgamer.coins.Permissions;
-import me.hsgamer.coins.api.CoinsAPI;
-import me.hsgamer.coins.config.MessageConfig;
+import me.brofan11.erme.Permissions;
+import me.brofan11.erme.api.CoinsAPI;
+import me.brofan11.erme.config.MessageConfig;
 import me.hsgamer.hscore.bukkit.utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -15,10 +15,10 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class AddCoinCommand extends Command {
-    public AddCoinCommand() {
-        super("addcoin", "Add coins to a player", "/addcoin <player> <coin>", Collections.emptyList());
-        setPermission(Permissions.ADD_COIN.getName());
+public class SetCoinCommand extends Command {
+    public SetCoinCommand() {
+        super("ermeallitas", "Betudod vele allitani a jatekos ermejet", "/ermeallitas <jatekos> <erme>", Collections.emptyList());
+        setPermission(Permissions.SET_COIN.getName());
     }
 
     @SuppressWarnings("deprecation")
@@ -40,7 +40,7 @@ public class AddCoinCommand extends Command {
         }
         // noinspection deprecation
         UUID uuid = Bukkit.getOfflinePlayer(args[0]).getUniqueId();
-        CoinsAPI.addCoin(uuid, coin);
+        CoinsAPI.setCoin(uuid, coin);
         MessageUtils.sendMessage(sender, MessageConfig.SUCCESS.getValue());
         return false;
     }

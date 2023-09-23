@@ -1,4 +1,4 @@
-package me.hsgamer.coins.manager.data;
+package me.brofan11.erme.manager.data;
 
 import me.hsgamer.hscore.database.client.sql.PreparedStatementContainer;
 import me.hsgamer.hscore.database.client.sql.SqlClient;

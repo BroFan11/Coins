@@ -1,4 +1,4 @@
-package me.hsgamer.coins.manager.data;
+package me.brofan11.erme.manager.data;
 
 import java.util.UUID;
 

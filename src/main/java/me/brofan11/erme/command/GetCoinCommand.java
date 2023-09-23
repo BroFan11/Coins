@@ -1,8 +1,8 @@
-package me.hsgamer.coins.command;
+package me.brofan11.erme.command;
 
-import me.hsgamer.coins.Permissions;
-import me.hsgamer.coins.api.CoinsAPI;
-import me.hsgamer.coins.config.MessageConfig;
+import me.brofan11.erme.Permissions;
+import me.brofan11.erme.api.CoinsAPI;
+import me.brofan11.erme.config.MessageConfig;
 import me.hsgamer.hscore.bukkit.utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public class GetCoinCommand extends Command {
     public GetCoinCommand() {
-        super("getcoin", "Get the coins you or other player has", "/getcoin [player]", Collections.emptyList());
+        super("ermeinfo", "Megtudod vele nezni hogy az adott jatekosnak mennyi ermeje van", "/ermeinfo [jatekos]", Collections.emptyList());
         setPermission(Permissions.GET_COIN.getName());
     }
 

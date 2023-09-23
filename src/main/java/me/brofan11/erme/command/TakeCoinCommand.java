@@ -1,8 +1,8 @@
-package me.hsgamer.coins.command;
+package me.brofan11.erme.command;
 
-import me.hsgamer.coins.Permissions;
-import me.hsgamer.coins.api.CoinsAPI;
-import me.hsgamer.coins.config.MessageConfig;
+import me.brofan11.erme.Permissions;
+import me.brofan11.erme.api.CoinsAPI;
+import me.brofan11.erme.config.MessageConfig;
 import me.hsgamer.hscore.bukkit.utils.MessageUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 
 public class TakeCoinCommand extends Command {
     public TakeCoinCommand() {
-        super("takecoin", "Take coins from a player", "/takecoin <player> <coin>", Collections.emptyList());
+        super("ermeelvetel", "Elveszi az ermet a jatekostol", "/ermeelvetel <jatekos> <erme>", Collections.emptyList());
         setPermission(Permissions.TAKE_COIN.getName());
     }
 
